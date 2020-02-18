@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >吴其凡</h1>
+                <h4 id="persona-tag" >Java / Web</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">吴其凡</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">硕士</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">四川大学</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2018</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">15198295232</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">497692530@qq.com</span></li>                 
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">https://github.com/wq57fan</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Java</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Mysql</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">html/css</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Javascript</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Python</label>
+                        <progress value="60" max="100"></progress>
+                    </li>                  
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">前端</label><span class="label-value">jQuery、Bootstrap</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端</label><span class="label-value">Spring、Spring MVC、Mybatis、Node.js、MongoDB、MySQL、Redis</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">其它</label><span class="label-value">Mockplus、Xmind、Markdown、Git</span></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="static/image/weixin.png" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>四川大学 - 控制工程（硕士）2015-2018</h3>                        
+                    </li>
+                    <li>
+                        <h3>四川大学 - 自动化（本科）2009-2013</h3>                     
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>四川航空集团有限责任公司－产品经理</h3>
+                        <p>牵头进行公司及部门项目建设，推进项目进行。从产品最初的市场调研、需求调研、挖掘需求开始，到原型设计与各种文档（MRD、PRD、产品说明文档、产品使用文档等）撰写、跟进项目进度、协调各部门人员完成项目建设。
+                        </p>
+                        <p>参与公司项目的全生命周期：成立项目组-业务需求调研-项目可行性阶段-立项执行阶段-招投标阶段-合同签署阶段-实施与测试阶段-试运行-验收。
+                        </p>
+                    </li>             
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">开发项目</span></h2>
+                <hr>
+                <ul class="experience-list">                 
+                    <li>
+                        <h3>秒杀系统（开发）</h3>
+                        	<p> 后台使用Java语言，前端主要使用HTML，CSS，Jquery，Bootstrap。实现了商品的秒杀功能、Restful标准化接口，并对可能出现的高并发进行优化：</p>
+                            <p>1、前端暴露接口按钮防重复；</p>
+                            <p>2、使用CDN缓存和后端缓存进行动静态数据分离；</p>
+                            <p>3、减少事务锁时间进行事务竞争优化；</p>
+                            <p>4、后端使用redis集群化部署优化。</p>                        
+                    </li>
+                    <li>
+                        <h3>电商系统（开发）</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">产品项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>DevOps项目（产品）</h3>
+                        <p>
+                            对信息部DevOps产品项目负责，主导推进项目落地。掌握四川航空信息部研发运维流程，对各个科室进行需求调研并输出需求说明书。可行性阶段中寻找产品的解决方案，匹配需求说明书完成产品的可行性报告。合同签署与实施阶段协同厂商完成业务蓝图、技术方案与实施方案，并组织各科室推进项目实施完成。整个项目中负责产品从零到落地的全生命周期，对公司信息部内部运作流程有深入理解，对DevOps开发运维一体化有深入理解，可帮助推进公司的敏捷交付进程。
+                            </p>
+                            <p>产品上线后，预计产生效能：需求处理平均时长从1月下降到1周，测试等待时长由4小时下降为1小时，部署前置时长由8小时下降为1小时，系统发布频率由每月1次增长为每周多次，研发效能由30%提升至60%等等。
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>宽体机飞行管理计算机风温数据上传项目（产品）</h3>
+                        <p>
+                            该项目的产品核心功能为建立飞行器FMS主机与地面风温数据处理系统的数据通道，实现飞行员可实时请求最新风温、飞行计划、舱单等数据，地面签派人员也可实时手动上传相关数据。飞机FMS主机能利用这些最新的数据自动计算优化飞行剖面，达到节省燃油、节约运行成本的目的。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                    	<h4>国家核心期刊（一篇）</h4>
+                    </li> 
+                    <li>
+                        <h4>实用新型专利（一项）</h4>
+                    </li> 
+                    <li>
+                        <h4>研究生二等奖学金（两次）</h4>
+                    </li>
+                    <li>
+                        <h4>研究生三等奖学金（一次）</h4>
+                    </li>
+                    <li>
+                        <h4>全国大学英语四、六级考试证书</h4>
+                    </li>
+                    <li>
+                        <h4>全国计算机等级考试二级C证书</h4>
+                    </li>                     
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <p>       
+                    <ul class="experience-list">
+                    <li>
+                    	你有什么行业背景/岗位经验（最有料的写在最前面，配合数据）
+                    </li> 
+                    <li>
+                        你参与过什么重要的项目（没有的话就不写、有的话拿出数据或实例）
+                    </li> 
+                    <li>
+                        针对应聘的岗位你有什么拿得出手的优势、技能
+                    </li>
+                    <li>
+                        职业动机/发展目标（你想在这个岗位做出什么样的成绩）
+                    </li>
+                    <li>
+                        ...
+                    </li>
+                    <li>
+                        ...
+                    </li>
+                </p>               
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
